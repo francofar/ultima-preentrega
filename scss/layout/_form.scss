@@ -1,0 +1,17 @@
+.formulario{
+    h1{
+        text-transform: capitalize;
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 10px;
+    }
+    .cardFormulario{
+        width: 45%;
+        margin: 10px;
+        .mb-3{
+            .form-label{
+                text-transform: capitalize;
+            }
+        }
+    }
+}

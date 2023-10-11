@@ -1,0 +1,32 @@
+footer{
+    grid-area: footer;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1.25rem;
+    .contacto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            width: 30px;
+            height: 30px; 
+        .p-foot{
+            color:yellow;
+            padding: bottom .625rem;
+        }
+    }
+    }
+    div{
+        a{
+            .logo{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+

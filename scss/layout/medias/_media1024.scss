@@ -1,0 +1,70 @@
+@media (max-width: 1024px){
+    header{
+        width: 100%;
+        height: 35px;
+    }
+    .containerGrid{
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 4% 1fr 5%;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer"
+        ;
+    }
+    .nosotrosPrincipal{
+        width: 100%;
+        height: 150px;
+        background-color: black; 
+        .logobarber{
+            width: 100%;
+        }
+        h1{
+            font-size: 30;
+            text-transform: capitalize;            
+        }
+    }
+
+    .navBar {
+        a{
+        font-size: 16px;
+        }
+    
+    }
+    .gridCards{
+        display: grid;
+        width: 100%;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "grid-1 grid-2"
+        "grid-3 grid-4"
+        "grid-5 grid-6"
+        ;
+    }
+    .card-1{
+        margin-left: 20%;
+    }
+    .card-3{
+        margin-left: 20%;
+    }
+    .card-5{
+        margin-left: 20%;
+    }
+    .card-2{
+        margin-right: 20%;
+    }
+    .card-4{
+        margin-right: 20%;
+    }
+    .card-6{
+        margin-right: 20%;
+    }
+    .nosotrosSecundario img{
+        width: 12.5rem;
+    }
+}
+footer{
+    width: 100%;
+    height: 37px;
+}

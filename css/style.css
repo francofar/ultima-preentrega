@@ -1,409 +1,352 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*navegador */
-.containerGrid{
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 7% 1fr 5%;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer"
-    ;
-}
-header{
-    background-color: lightslategray;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    grid-area: header;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navUno li a {
-    color:yellow;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    text-transform: capitalize;
+.containerGrid {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 7% 1fr 5%;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
 }
-li {
-    list-style: none;   
-
+.containerGrid header {
+  background-color: lightslategray;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  grid-area: header;
 }
-.navBar {
-    background-color: lightslategray;
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-
+.containerGrid header nav .navBar {
+  background-color: lightslategray;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
-.navBar li a {
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-text-decoration: none;
-color: yellow;
-text-transform: capitalize;
-
-}
-/** main **/
-/**banner**/
-
-main{
-    grid-area: main;
-}
-body {
-    background-color: lightgrey;
+.containerGrid header nav .navBar li a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  color: yellow;
+  text-transform: capitalize;
 }
 
-.logobarber{
-    width: 9.375rem;
-}
-.fotobarber {
-    width: 18.75rem;
-}
 .fondo1 {
-    width: 100%;
-    background-image: url(../assets/img/logobarber.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  background-image: url(../assets/img/logobarber.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.galeria {
-    width: 25rem;
 
+body {
+  background-color: lightgrey;
 }
-.gridCards{
+body main {
+  grid-area: main;
+}
+body main .nosotrosPrincipal {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+body main .nosotrosPrincipal .logobarber {
+  width: 9.375rem;
+}
+body main .nosotrosPrincipal h1 {
+  text-align: center;
+  color: yellow;
+  font-size: 5rem;
+  text-transform: capitalize;
+  background-color: black;
+}
+
+footer {
+  grid-area: footer;
+  background-color: lightslategray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1.25rem;
+}
+footer .contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .contacto .logo {
+  width: 30px;
+  height: 30px;
+}
+footer .contacto .logo .p-foot {
+  color: yellow;
+  padding: bottom 0.625rem;
+}
+footer div a .logo {
+  width: 30px;
+  height: 30px;
+}
+
+.formulario h1 {
+  text-transform: capitalize;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 10px;
+}
+.formulario .cardFormulario {
+  width: 45%;
+  margin: 10px;
+}
+.formulario .cardFormulario .mb-3 .form-label {
+  text-transform: capitalize;
+}
+
+.gridCards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "grid-1 grid-2 grid-3" "grid-4 grid-5 grid-6";
+}
+.gridCards .productos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  width: 18.75rem;
+  height: 21.875rem;
+  border: 1px solid;
+  margin: 10px;
+  border-radius: 0.3125rem;
+}
+.gridCards .productos img {
+  width: 80%;
+}
+.gridCards .productos h2 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: capitalize;
+}
+.gridCards .productos p {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.gridNosotros {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "cardNosotros-1 cardNosotros-2" "cardNosotros-3 cardNosotros-2";
+}
+.gridNosotros .nosotrosSecundario {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gridNosotros .nosotrosSecundario .fotobarber {
+  width: 18.75rem;
+}
+.gridNosotros .nosotrosSecundario h2 {
+  text-transform: capitalize;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50;
+}
+.gridNosotros .nosotrosSecundario p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.cardNosotros-1 {
+  grid-area: cardNosotros-1;
+}
+
+.cardNosotros-2 {
+  grid-area: cardNosotros-2;
+}
+
+.cardNosotros-3 {
+  grid-area: cardNosotros-3;
+}
+
+.carousel-item img {
+  width: 25rem;
+}
+
+@media (max-width: 1024px) {
+  header {
+    width: 100%;
+    height: 35px;
+  }
+  .containerGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4% 1fr 5%;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+  }
+  .nosotrosPrincipal {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+  }
+  .nosotrosPrincipal .logobarber {
+    width: 100%;
+  }
+  .nosotrosPrincipal h1 {
+    font-size: 30;
+    text-transform: capitalize;
+  }
+  .navBar a {
+    font-size: 16px;
+  }
+  .gridCards {
     display: grid;
     width: 100%;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "grid-1 grid-2 grid-3"
-    "grid-4 grid-5 grid-6"
-    ;
-
-
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "grid-1 grid-2" "grid-3 grid-4" "grid-5 grid-6";
+  }
+  .card-1 {
+    margin-left: 20%;
+  }
+  .card-3 {
+    margin-left: 20%;
+  }
+  .card-5 {
+    margin-left: 20%;
+  }
+  .card-2 {
+    margin-right: 20%;
+  }
+  .card-4 {
+    margin-right: 20%;
+  }
+  .card-6 {
+    margin-right: 20%;
+  }
+  .nosotrosSecundario img {
+    width: 12.5rem;
+  }
 }
-.productos {
-    display: flex;
+footer {
+  width: 100%;
+  height: 37px;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+    height: 1.75rem;
+    padding: 0.1875rem;
+  }
+  main .nosotrosPrincipal {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+  }
+  main .nosotrosPrincipal .logobarber {
+    width: 50px;
+    height: 100%;
+  }
+  main .nosotrosPrincipal .title {
+    font-size: 2.5rem;
+  }
+  .card-1 {
+    margin-left: 10%;
+  }
+  .card-3 {
+    margin-left: 10%;
+  }
+  .card-5 {
+    margin-left: 10%;
+  }
+  .card-2 {
+    margin-right: 10%;
+  }
+  .card-4 {
+    margin-right: 10%;
+  }
+  .card-6 {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    width: 100%;
+    height: 230px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .navBar {
     width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
-    width: 18.75rem;
-    height: 21.875rem;
-    border: 1px solid ;
-    margin: 10px;
-    border-radius: .3125rem;
-
-} 
-.productos h2 {
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: capitalize;
-}
-.productos p {
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-.productos img { 
-    width: 80%;
-
-}
-.nosotrosPrincipal {
-    display: flex;
+    padding-top: 2%;
+  }
+  header nav .navBar li a {
+    font-size: 18px;
+  }
+  main .nosotrosPrincipal {
     width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    height: 80px;
     background-color: black;
-}
-.nosotrosPrincipal h1 {
-    text-align: center;
-    color: yellow;
-    font-size: 5rem;
-    text-transform: capitalize;
-    background-color: black;
-}
-.gridNosotros {
-display: grid;
-width: 100%;
-grid-template-columns:1fr 1fr;
-grid-template-rows:1fr 1fr;
-grid-template-areas:
-"cardNosotros-1 cardNosotros-2"
-"cardNosotros-3 cardNosotros-2"
-;
-}
-.cardNosotros-1{
-    grid-area: cardNosotros-1;
-}
-.cardNosotros-2{
-    grid-area: cardNosotros-2;
-}
-.cardNosotros-3{
-    grid-area:cardNosotros-3;
-}
-
-.nosotrosSecundario {
-    background-color: antiquewhite;
+  }
+  main .nosotrosPrincipal .logobarber {
+    width: 20px;
+    height: 100%;
+  }
+  main .nosotrosPrincipal .title {
+    font-size: 1.25rem;
+  }
+  main .gridCards {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+  }
+  .gridNosotros {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "cardNosotros-1" "cardNosotros-2" "cardNosotros-3";
+  }
+  .cardNosotros-1 p {
+    padding: 0.4375rem;
+    text-align: center;
+  }
+  .cardNosotros-2 {
+    padding: 0.4375rem;
+    text-align: center;
+  }
+  .cardNosotros-3 {
+    padding: 0.4375rem;
+    text-align: center;
+  }
+  .footerIndex {
+    width: 100%;
+    height: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.nosotrosSecundario h2 {
-    text-transform: capitalize;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 50;
-}
-.nosotrosSecundario h2 p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-.fotos{
-    display:flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1.25rem;
+  }
 }
 
-.formulario {  
-    height: 11rem;
-    width: 15rem;
-
-}
-
-.cardFormulario{
-    width: 31.25rem;
-    margin: 10px;
-}
-.consulta{
-    text-transform: capitalize;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-/**footer**/
-footer{
-    grid-area: footer;
-}
-.footerIndex{
-    background-color: lightslategray;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 1.25rem;
-}
-.contacto{
-    display: flex;
-    align-items: center;
-}
-footer div p {
-    color:yellow;
-    padding: bottom .625rem;
-}
-.logo {
-    width: 30px;
-    height: 30px; 
-}
-.footerSecundario {
-    background-color: lightslategray;
-}
-
-
-@media (max-width: 1024px){
-    .containerGrid{
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 4% 1fr 5%;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer"
-        ;
-    }
-    .nosotrosPrincipal{
-        width: 100%;
-        height: 80px;
-    }
-    .logobarber{
-        width: 80px;
-
-    }
-    .nosotrosPrincipal h1 {
-        font-size: 3.125rem;
-        text-transform: capitalize;
-        background-color: black;
-    }
-    .navBar {
-        font-size: 1.1875rem;
-    
-    }
-    .gridCards{
-        display: grid;
-        width: 100%;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "grid-1 grid-2"
-        "grid-3 grid-4"
-        "grid-5 grid-6"
-        ;
-    }
-    .card-1{
-        margin-left: 20%;
-    }
-    .card-3{
-        margin-left: 20%;
-    }
-    .card-5{
-        margin-left: 20%;
-    }
-    .card-2{
-        margin-right: 20%;
-    }
-    .card-4{
-        margin-right: 20%;
-    }
-    .card-6{
-        margin-right: 20%;
-    }
-    .nosotrosSecundario img{
-        width: 12.5rem;
-    }
-}
-@media (max-width: 768px){
-    .card-1{
-        margin-left: 10%;
-    }
-    .card-3{
-        margin-left: 10%;
-    }
-    .card-5{
-        margin-left: 10%;
-    }
-    .card-2{
-        margin-right: 10%;
-    }
-    .card-4{
-        margin-right: 10%;
-    }
-    .card-6{
-        margin-right: 10%;
-    }
-}
-
-@media (max-width: 425px){
-    .gridCards{
-        display: grid;
-        width: 100%;
-        grid-template-columns:1fr;
-        grid-template-rows: repeat 6 (1fr);
-        grid-template-areas: 
-        "grid-1"
-        "grid-2"
-        "grid-3"
-        "grid-4"
-        "grid-5"
-        "grid-6"
-        ;
-    }
-    .card-1{
-        margin-left: 10%;
-    }
-    .card-3{
-        margin-left: 10%;
-    }
-    .card-5{
-        margin-left: 10%;
-    }
-    .card-2{
-        margin-left: 10%;
-    }
-    .card-4{
-        margin-left: 10%;
-    }
-    .card-6{
-        margin-left: 10%;
-    }
-    .nosotrosPrincipal h1 {
-        font-size: 30px;
-    }
-    header{
-        justify-content: center;
-        align-items: center;
-    }
-    .navBar{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 2%;
-    }
-    .containerGrid{
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: auto 1fr auto;
-        grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer"
-        ;
-    }
-    .gridNosotros {
-        display: grid;
-        width: 100%;
-        grid-template-columns:1fr;
-        grid-template-rows:1fr 1fr 1fr;
-        grid-template-areas:
-        "cardNosotros-1"
-        "cardNosotros-2"
-        "cardNosotros-3"
-        ;
-        }
-    .cardNosotros-1 p{
-        padding: .4375rem;
-        text-align: center;
-    }
-    .cardNosotros-2{
-        padding: .4375rem;
-        text-align: center;
-    }
-    .cardNosotros-3{
-        padding: .4375rem;
-        text-align: center;
-    }
-    .footerIndex{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}    
-@media (max-width: 320px){
-    .card-1{
-        margin: .0625rem;
-    }
-    .card-3{
-        margin: .0625rem;
-    }
-    .card-5{
-        margin: .0625rem;
-    }
-    .card-2{
-        margin: .0625rem;
-    }
-    .card-4{
-        margin: .0625rem;
-    }
-    .card-6{
-        margin: .0625rem;
-    }
-}
+/*# sourceMappingURL=style.css.map */
