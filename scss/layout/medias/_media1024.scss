@@ -5,7 +5,7 @@
     }
     .containerGrid{
         grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 4% 1fr 5%;
+        grid-template-rows: 7% 1fr 5%;
         grid-template-areas: 
         "header header header"
         "main main main"
@@ -64,7 +64,15 @@
         width: 12.5rem;
     }
 }
-footer{
-    width: 100%;
-    height: 37px;
-}
+    footer{
+        width: 100%;
+        height: 37px;
+    }
+    .fondo1{
+        background-image: url(../assets/img/fondo-index.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+
+    }
